@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600|Work+Sans:400,500,600,700&display=swap');
+
+body{
+  background: rgb(15, 130, 70);
+  background: linear-gradient(135deg, rgb(66, 131, 38) 0%,     rgb(29, 190, 188) 100%);
+  font-family: "work sans";
+  padding: 0;
+  margin: 0;
+  height: 875px;
+  width: 100%;
+ 
+}
+
+html{
+  font-size: 100%;
+}
+
+#loginform{
+  max-width: 500px;
+  min-width: 300px;
+  max-height: 700px;
+  width: 30%;
+  height: 60%;
+  margin: 100px auto;
+  background-color: #FFFFFF;
+  border-radius: 25px;
+}
+
+#headerTitle{
+  text-align: center;
+  font-family: 'open sans', sans-serif;
+  padding: 2rem 0;
+  margin: 0;
+  font-size: 2rem;
+}
+
+.row{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  max-width: 100%;
+  
+}
+
+.row input{
+  width: 80%;
+  box-sizing: border-box;
+	border: none;
+  font-size: 1.3rem;
+  padding-left: 1.5rem;
+  padding-bottom: 1rem;
+  box-shadow: inset 0px -3px 0px 0px rgba(187,187,187,0.2);
+  transition: box-shadow 0.2s ease-in;
+}
+
+.row input:focus{
+   box-shadow: inset 0px -3px 0px 0px rgba(34,193,195,0.7);
+   outline: none;
+}
+
+.row input::-webkit-input-placeholder{
+  opacity: 1;
+  transition: opacity 0.25s ease-out;
+}
+
+.row input:hover::-webkit-input-placeholder,
+.row input:focus::-webkit-input-placeholder{
+  opacity: 0;
+}
+
+.row label{
+  align-self: start;
+  padding-left: 4.5rem;
+  padding-bottom: 0.5rem;
+  color: rgba(187,187,187,0.9);
+}
+
+.row button{
+  border-radius: 25px;
+  width: 80%;
+  height: 40px;
+  font-size: 1.3rem;
+  color: white;
+  font-weight: 700;
+  /* background: rgb(34,193,195); */
+  background: rgb(15, 130, 70);
+  /* background: linear-gradient(90deg, rgba(34,193,195,1) 0%,     rgba(253,187,45,1) 100%); */
+  background: linear-gradient(135deg, rgb(66, 131, 38) 0%,     rgb(29, 190, 188) 100%);
+
+  border: 0px;
+  cursor: pointer;
+  transition: opacity 0.25s ease-out;
+}
+
+.row button:hover{
+  opacity: 0.8;
+}
+
+#button{
+  padding-bottom: 1.5rem;
+}
+
+#facebookIcon{
+  background-image:      url("https://image.flaticon.com/icons/svg/145/145802.svg");
+  background-repeat: no-repeat;
+  width: 3rem;
+  height: 3rem;
+}
+
+#twitterIcon{
+  background-image: url("https://image.flaticon.com/icons/svg/145/145812.svg");
+  background-repeat: no-repeat;
+  width: 3rem;
+  height: 3rem;
+}
+
+
+#iconGroup{
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+#iconGroup a{
+  margin: 0 0.6rem;
+}
+
+#alternativeLogin {
+   text-align: center;
+   padding-top: 2rem;
+   margin-top: 1.5rem;
+}
+
+
+.todo-form-container {
+  margin-top: 1rem;
+ 
+  
+}
+
+.input-field {
+  width: 50%;
+font-size: 18px;
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+}
+
+.add-button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.todo-item {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 0.375rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.todo-item:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.todo-item-content {
+  display: flex;
+  align-items: center;
+}
+
+.todo-item-content p {
+  font-size: 1.125rem;
+  margin-right: 0.5rem;
+}
+
+.checkbox-input {
+  margin-right: 0.5rem;
+}
+
+.editing-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  
+ 
+}
+
+.editing-input {
+  margin-right: 0.5rem;
+  border-bottom: 1px solid #ccc;
+  
+  padding: .5rem;
+  font-size: 18px;
+  
+}
+
+.editing-buttons button {
+  color: #008000;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  padding: .5rem;
+
+}
+
+.completed-text {
+  text-decoration: line-through 2px solid red;
+}
+
+.action-buttons button {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.375rem;
+  transition: background-color 0.3s ease-in-out;
+
+  margin-right: 6px;
+}
+
+
+.todo-list-container {
+ 
+  margin: auto;
+  width: 50%;
+ 
+  text-align: center;
+  padding: 10px;
+ 
+ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 8px;
+}
+
+.todo-list-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+.header-container {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-menu {
+  font-size: 1rem;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.nav-item {
+  margin-right: 1rem;
+}
+
+.nav-item:last-child {
+  margin-right: 0;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-item a:hover {
+  text-decoration: underline;
+}
+.footer-container {
+  background-color: #333;
+  color: white;
+  padding: 1rem 0;
+  margin-bottom: -20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.social-links li {
+  display: inline;
+  margin: 0 0.5rem;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.social-links a:hover {
+  color: #007bff;
+}
+
+
+/* Add more styles as needed */
